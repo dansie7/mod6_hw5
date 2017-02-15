@@ -20,10 +20,12 @@ int main(void)
 {
 	double AnnulusMoment(float, float);  //function
 
-	printf("Enter value for inner radius (r1): "\n);
+	float radnum1, radnum2, I;
+
+	printf("Enter value for inner radius (r1): \n");
 	scanf("%f", &radnum1);
 
-	printf("Enter value for outer radius (r2): "\n);
+	printf("Enter value for outer radius (r2): \n");
 	scanf("%f", &radnum2);
 
 	I = AnnulusMoment(radnum1, radnum2);
