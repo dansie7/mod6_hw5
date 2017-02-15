@@ -22,15 +22,16 @@ int main(void)
 
 	float radnum1, radnum2, I;
 
-	printf("Enter value for inner radius (r1): \n");
+	printf("Enter value for inner radius (r1): ");
 	scanf("%f", &radnum1);
 
-	printf("Enter value for outer radius (r2): \n");
+	printf("Enter value for outer radius (r2): ");
 	scanf("%f", &radnum2);
 
 	I = AnnulusMoment(radnum1, radnum2);
 
 	printf("The second moment of inertia is %.2f\n", I);
+
 	return 0;
 }
 
