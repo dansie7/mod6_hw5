@@ -18,7 +18,17 @@
 /* Main Program */
 int main(void)
 {
+	double AnnulusMoment(float, float);  //function
 
+	printf("Enter value for inner radius (r1): "\n);
+	scanf("%f", &radnum1);
+
+	printf("Enter value for outer radius (r2): "\n);
+	scanf("%f", &radnum2);
+
+	I = AnnulusMoment(radnum1, radnum2);
+
+	printf("The second moment of inertia is %.2f\n", I);
 	return 0;
 }
 
@@ -26,6 +36,6 @@ int main(void)
 /* Function Defenitions */
 double AnnulusMoment(float r1, float r2) //functions header line
 {
-	return ((3.14/4) * ((r2 * r2 * r2 * r2) - (r1 * r1 * r1 * r1)));
+	return ((3.14/4) * ((r2 * r2 * r2 * r2) - (r1 * r1 * r1 * r1)));		//second moment of inertia calculation
 }
 
