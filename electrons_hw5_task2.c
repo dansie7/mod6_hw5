@@ -28,7 +28,6 @@ int main(void)
 	scanf("%f", &ending);
 	printf("Enter the distance increment: ");
 	scanf("%f", &increment);
-	printf("Miles   =   Kilometers\n");
 
 	MakeMilesKmTable(mile, ending, increment);
 
@@ -39,6 +38,7 @@ int main(void)
 /* Function Defenitions */
 void MakeMilesKmTable(float mile, float ending, float increment)
 {
+	printf("Miles   =   Kilometers\n");
 	float kilometer;
 	while(mile <= ending)
 	{
