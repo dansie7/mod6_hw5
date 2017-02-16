@@ -39,6 +39,6 @@ int main(void)
 /* Function Defenitions */
 double AnnulusMoment(float r1, float r2) //functions header line
 {
-	return ((3.14/4) * ((r2 * r2 * r2 * r2) - (r1 * r1 * r1 * r1)));		//second moment of inertia calculation
+	return ((3.14159265359/4) * ((r2 * r2 * r2 * r2) - (r1 * r1 * r1 * r1)));		//second moment of inertia calculation
 }
 
