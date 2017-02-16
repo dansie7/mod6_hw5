@@ -14,14 +14,13 @@
 #include <stdio.h>		/* For Standard I/O */
 
 /* Function Prototypes */
-
+void MakeMilesKmTable(float miles, float ending, float increment);
 /* Main Program */
 int main(void)
 {
 	float mile;
 	float ending;
 	float increment;
-	float kilometer;
 
 	printf("Enter the starting mile distance: ");
 	scanf("%f", &mile);
@@ -29,18 +28,23 @@ int main(void)
 	scanf("%f", &ending);
 	printf("Enter the distance increment: ");
 	scanf("%f", &increment);
-
 	printf("Miles   =   Kilometers\n");
-	while(mile <= ending)
-	{
-		kilometer = mile * 1.61;
-		printf("%5.2f       %10.2f\n", mile, kilometer);
-		mile += increment;
-	}
+
+	MakeMilesKmTable(mile, ending, increment);
 
 	return 0;
 }
 
 
 /* Function Defenitions */
-
+void MakeMilesKmTable(float mile, float ending, float increment)
+{
+	float kilometer;
+	while(mile <= ending)
+	{
+		kilometer = mile * 1.61;
+		printf("%5.2f       %10.2f\n", mile, kilometer);
+		mile += increment;
+	}
+	return;
+}
